@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 300px;
+            flex-direction: column;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+
+        .grid-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+        }
+
+        .btn {
+            background: rgb(179, 179, 179);
+            width: 100px;
+            height: 100px;
+            font-size: 50px;
+            border-width: 0;
+        }
+
+        #winner {
+            font-size: 80px;
+            margin-top: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="grid-container">
+            <div class="grid-item"><button class="btn" id="00"></button></div>
+            <div class="grid-item"><button class="btn" id="01"></button></div>
+            <div class="grid-item"><button class="btn" id="02"></button></div>
+            <div class="grid-item"><button class="btn" id="10"></button></div>
+            <div class="grid-item"><button class="btn" id="11"></button></div>
+            <div class="grid-item"><button class="btn" id="12"></button></div>
+            <div class="grid-item"><button class="btn" id="20"></button></div>
+            <div class="grid-item"><button class="btn" id="21"></button></div>
+            <div class="grid-item"><button class="btn" id="22"></button></div>
+        </div>
+
+        <div id="winner">
+            
+        </div>
+    </div>
+
+    <script src="tic.js"></script>
+
+</body>
+</html>
